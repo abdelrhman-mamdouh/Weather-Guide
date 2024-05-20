@@ -28,6 +28,16 @@ When the user clicks on a row from the forecast list on the first screen, the ap
 
 - ⏰ **Hourly Forecast**: Lists the weather starting from the current hour, displaying the hour, weather icon, and temperature for each hour.
 
+## Technologies Used
+
+- **MVVM Architecture**: The app follows the Model-View-ViewModel (MVVM) architecture to separate concerns and improve code maintainability.
+- **Lottie**: For smooth and visually appealing animations.
+  ![Lottie](https://img.shields.io/badge/Lottie-Animations-brightgreen)
+- **Kingfisher**: For efficient image downloading and caching.
+  ![Kingfisher](https://img.shields.io/badge/Kingfisher-Image%20Caching-blue)
+- **Alamofire**: For networking and API requests.
+  ![Alamofire](https://img.shields.io/badge/Alamofire-Networking-orange)
+
 ## Getting Started
 
 To get a local copy of the project up and running, follow these simple steps.
@@ -37,3 +47,6 @@ To get a local copy of the project up and running, follow these simple steps.
 1. **Clone the repository**:
    ```sh
    git clone https://github.com/your-username/weather-guide.git
+  
+Happy coding! 🌦️
+
