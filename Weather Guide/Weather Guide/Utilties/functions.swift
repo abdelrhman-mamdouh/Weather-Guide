@@ -8,57 +8,43 @@
 import Foundation
 import SwiftUI
 
-func getWeatherEmoji(code: Int) -> String {
-    switch code {
-    case 1000:
-        return "☀️"
-    case 1003:
-        return "⛅️"
-    case 1006, 1009:
-        return "☁️"
-    case 1030, 1135, 1147:
-        return "🌫"
-    case 1063, 1180, 1183, 1186, 1189, 1192, 1195, 1240, 1243, 1246:
-        return "🌧"
-    case 1066, 1069, 1072, 1114, 1117, 1210, 1213, 1216, 1219, 1222, 1225, 1255, 1258:
-        return "❄️"
-    case 1087, 1273, 1276, 1279, 1282:
-        return "⛈"
-    default:
-        return "❓"
-    }
-}
 
 func filterForecast(_ forecast: [Hour]) -> [Hour] {
     let currentTime = Date()
     let formatter = DateFormatter()
     formatter.dateFormat = "yyyy-MM-dd HH:mm"
+    let calendar = Calendar.current
     
     return forecast.filter { hour in
         if let date = formatter.date(from: hour.time) {
-            return date >= currentTime
+           
+            return date >= currentTime || calendar.compare(date, to: currentTime, toGranularity: .hour) == .orderedSame
         }
         return false
     }
 }
 
-
 func getShortTime(time: String) -> String {
     let formatter = DateFormatter()
     formatter.dateFormat = "yyyy-MM-dd HH:mm"
+    
     if let date = formatter.date(from: time) {
         let currentTime = Date()
         let calendar = Calendar.current
-        if calendar.compare(date, to: currentTime, toGranularity: .hour) == .orderedSame {
+        
+        let inputHour = calendar.component(.hour, from: date)
+        let currentHour = calendar.component(.hour, from: currentTime)
+        
+        if inputHour == currentHour && calendar.isDate(date, inSameDayAs: currentTime) {
             return "Now"
         } else {
             formatter.dateFormat = "h a"
             return formatter.string(from: date)
         }
     }
+    
     return time
 }
-
 
 
 func getShortDayName(epoch: Int) -> String {

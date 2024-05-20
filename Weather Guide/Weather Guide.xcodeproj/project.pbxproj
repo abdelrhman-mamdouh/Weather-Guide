@@ -128,7 +128,6 @@
 			children = (
 				6EC3153A2BF7FACF00E2772D /* Network */,
 				6E9A28202BF8D6A500441A80 /* LocarionManger.swift */,
-				6E84A9132BFB5AD0009E82E4 /* LottieView.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -144,6 +143,7 @@
 		6EC315462BF8000400E2772D /* Utilties */ = {
 			isa = PBXGroup;
 			children = (
+				6E84A9132BFB5AD0009E82E4 /* LottieView.swift */,
 				6EC315472BF8001A00E2772D /* functions.swift */,
 				6E9A281E2BF8CC6900441A80 /* Constants.swift */,
 			);

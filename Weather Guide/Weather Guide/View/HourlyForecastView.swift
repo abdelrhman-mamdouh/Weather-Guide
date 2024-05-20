@@ -31,6 +31,7 @@ struct HourlyForecastView: View {
                         Text("\(Int(forecast.temp_c))°C")
                             .font(.system(size: 25))
                             .shadow(color: .black.opacity(0.2), radius: 1, x: 0, y: 2)
+                        Spacer()
                     } .background(Color.white.blur(radius: 100).opacity(0.5))
                     
                     .cornerRadius(15)
