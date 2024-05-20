@@ -28,6 +28,14 @@ When the user clicks on a row from the forecast list on the first screen, the ap
 
 - ⏰ **Hourly Forecast**: Lists the weather starting from the current hour, displaying the hour, weather icon, and temperature for each hour.
 
+## Video Demo
+
+Watch the video demonstration of the Weather Guide iOS app:
+
+https://github.com/abdelrhman-mamdouh/Weather-Guide/assets/63111171/610aab1d-8612-4da1-a64b-b74e80f3f12a
+
+
+
 ## Technologies Used
 
 - **MVVM Architecture**: The app follows the Model-View-ViewModel (MVVM) architecture to separate concerns and improve code maintainability.
