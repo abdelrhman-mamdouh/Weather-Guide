@@ -13,13 +13,8 @@ Weather Guide is a beautifully designed iOS app that provides accurate and up-to
    - **Maximum and Minimum Temperature**: Shows today's high and low temperatures.
    - **Condition Icon**: Displays an icon representing the current weather condition.
 
-   ![Top Section](https://path-to-top-section-image.png)
-Features
-
 2. 📅 **Middle Section: 3-Day Forecast**
     - **3-DAY FORECAST**: Get a quick glance at the weather for the next three days.
-
-   ![Middle Section](https://path-to-middle-section-image.png)
 
 3.🌙 **Bottom Section**
    - **Visibility**: Displays the current visibility.
